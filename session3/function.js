@@ -19,14 +19,32 @@
 // console.log(func1(x, y), func2(x, y));
 
 
-let arithmetics = [
-  (a, b) => a + b,
-  (a, b) => a - b,
-  (a, b) => a * b,
-  (a, b) => a / b
-];
+// let arithmetics = [
+//   (a, b) => a + b,
+//   (a, b) => a - b,
+//   (a, b) => a * b,
+//   (a, b) => a / b
+// ];
 
-for (arm of arithmetics) {
-  console.log(arm(5, 3));
+// for (arm of arithmetics) {
+//   console.log(arm(5, 3));
+// }
+
+// calculate
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+
+// evaluate
+const isOdd = (number) => !!(number % 2);
+const isPositive = (number) => number > 0;
+
+function calcAndEval (calc, eval, x, y) {
+  return eval(calc(x, y));
 }
 
+console.log(
+  calcAndEval(add, isOdd, 5, 7),
+  calcAndEval(subtract, isPositive, 5, 7),
+  calcAndEval(multiply, isOdd, 5, 7)
+);
