@@ -62,9 +62,9 @@ const add_mul_sub_div_pow
   //arguments는 인자를 전부 볼 수 있고, 배열 형태이다
   //rest parameters는 인자로 받고 남은 인자들을 실제 배열로 보여준다.
   const add = (a, b) => a + b;
-const sub = (a, b) => a - b;
-const mul = (a, b) => a * b;
-const div = (a, b) => a / b;
+// const sub = (a, b) => a - b;
+// const mul = (a, b) => a * b;
+// const div = (a, b) => a / b;
 
 function doMultiArms (x, y, ...arms) {
   let result = x;
