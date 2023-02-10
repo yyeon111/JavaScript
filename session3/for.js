@@ -15,7 +15,7 @@ for (const key in lunch) { // 💡 변할 것이 아니므로 const 사용
 }
 
 //for in은 객체의 키에 접근
-//for of는 배열의 각 요소에 접근
+//for of는 배열의 각 요소에 접근 []자체가 요소가 된다.
 // 문자열 역시 이터러블이므로 사용 가능
 for (const letter of '안녕하세요~') {
   console.log(letter);
