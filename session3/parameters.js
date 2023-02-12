@@ -76,7 +76,7 @@ function doMultiArms (x, y, ...arms) {
 }
 
 console.log(
-  doMultiArms(8, 3, add, mul, 1, true), // arms는 mul, 1, true가 된다.
+  doMultiArms(8, 3, add, mul, 1, true), // arms는 add, mul, 1, true가 된다.
   doMultiArms(8, 3, add, mul, sub),
   doMultiArms(8, 3, add, mul, sub, div),
   doMultiArms(8, 3, add, mul, sub, div, (x, y) => x ** y)
