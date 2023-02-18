@@ -96,9 +96,9 @@ class YalcoChicken {
 }
 
 class ConceptYalcoChicken extends YalcoChicken {
-  static contact () {
-    super.contact();
-    console.log('컨셉 가맹문의는 홈페이지를 참조하세요.');
+  static contact () { //concepYalco에 static 메소드 설정
+    super.contact();//부모의 contact가져올것 
+    console.log('컨셉 가맹문의는 홈페이지를 참조하세요.'); //concept에 추가할 내용
   }
 }
 
