@@ -32,7 +32,7 @@ console.log(globalThis);
 //표준빌트인 객체 = 자바스크립트 사양에 정의된 객체들. 어떤 환경에서든 사용 가능
 //전역 프로퍼티로 제공된다. 
 //Strung Number Boolean 선언하지 않았는데도 객체를 만들 수 있는 이유 표준 빌트인 객체에 속하기 때문이다. => 레퍼 객체라고 부른다.
-//그런데 globalThis.isNaN 로 안하고 IsNaN로 호출해도 가능하다.
+//그런데 globalThis.isNaN 로 안하고 IsNaN로 호출해도 가능하다. 프로퍼티나 메서드를 갖고 있지 않다.
 
 //원시값을 가지고 있는데 프로퍼티를 가지고 있다. 
 
@@ -59,6 +59,8 @@ const str = new String('abcde');
 const num = new Number(123.4567);
 const bool = new Boolean(true);
 
-console.log(str.valueOf());
+console.log(str.valueOf()); //prototype에 따라 method가 있다. 궁극적인 prototype은 object이기 때문에 object의 method를 사용 할 수 있다.
 console.log(num.valueOf());
 console.log(bool.valueOf()); //인스턴스에서 원시값 반환.
+
+//모든객체의 궁극적인 prototype은 objcet이다.
