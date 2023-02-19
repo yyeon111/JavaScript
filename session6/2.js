@@ -106,3 +106,7 @@ console.log(
   parseInt([]),
   parseInt(['a', 1, true]) //문자가 먼저오면 변환 안됨.
 );
+
+console.log(isNaN('3'));
+
+console.log(parseFloat('1a234'));

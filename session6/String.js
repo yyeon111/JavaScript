@@ -171,3 +171,6 @@ console.log(word10.replaceAll('밥', '라면'));
 console.log(word10.replaceAll(/밥/g, '라면')); //replace에서 정규표현식 쓰는거랑 같은것임. 
 
 //메서드를 연속적으로 붙어서 사용하는 것을 메서드 체이닝 이라고 한다.
+
+const test = '안녕 하세요';
+console.log(test.search('하'));
