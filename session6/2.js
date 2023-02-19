@@ -40,7 +40,7 @@ console.log(
   parseFloat('123.0'), //소수점이 0으로 오면 0을 버린다.
   parseFloat('123'),
   parseFloat(' 123ABC '), //숫자 뒤에오는 문자는 버린다.
-  parseFloat([123, 456, 789])
+  parseFloat([123, 456, 789]) //배열일 때는 앞 element만 반환, 객체는 NaN으로 됨.
 );
 
 console.log(
@@ -88,3 +88,21 @@ const searchURI = `https://www.google.com/search?q=${encodedKeyword}`;
 console.log(searchURI);
 
 //decodeURI decodeURIComponent 반대기능
+
+console.log(parseFloat([123,456]));
+console.log(parseFloat({1:1,2:2}));
+console.log(parseInt('1.11'));
+console.log(parseInt('13a3'));
+console.log(parseInt([1,2,3]));
+console.log(
+  parseInt('123.0'), //소수점이 0으로 오면 0을 버린다.
+  parseInt('123'),
+  parseInt(' 123ABC '), //숫자 뒤에오는 문자는 버린다.
+  parseInt([123, 456, 789]) //배열일 때는 앞 element만 반환, 객체는 NaN으로 됨.
+);
+console.log(
+  parseInt('ABC123'), //문자가 먼저오면 변환 안됨
+  parseInt({x: 1}),
+  parseInt([]),
+  parseInt(['a', 1, true]) //문자가 먼저오면 변환 안됨.
+);
