@@ -174,3 +174,7 @@ console.log(word10.replaceAll(/밥/g, '라면')); //replace에서 정규표현�
 
 const test = '안녕 하세요';
 console.log(test.search('하'));
+
+
+const a = '가나다라마';
+console.log(a.slice(-3,-2));
