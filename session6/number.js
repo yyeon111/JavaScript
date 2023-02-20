@@ -79,7 +79,7 @@ console.log(
 );
 // 인자로 자릿수 제한
 console.log( 
-  (123.456789).toExponential(2),
+  (123.456789).toExponential(2), //소수갯수
   (123.456789).toExponential(4),
   (123.456789).toExponential(20)
 );
@@ -104,3 +104,30 @@ console.log(
 
 //toPrecision 정수부 자리수보다 작은 수가 들어오면 지수로 나타냄
 //정수보다 같거나 많으면, 반올림하여 인자 만큼 나타낸다.
+console.log(
+  // 인자가 없으면 toString처럼 그대로 문자열로 반환
+  (1234.56789).toPrecision()
+);
+// 인자가 정수부 자릿수보다 적으면 지수로 인자수만큼 정수+실수 를 나타냄
+console.log(
+  (1234.56789).toPrecision(1),
+  (1234.56789).toPrecision(2),
+  (1234.56789).toPrecision(3)
+);
+
+// 반올림
+console.log(
+  (1234.56789).toPrecision(4), //정수랑 같거나 크면 인자 수만큼 정수+실수를 나타냄
+  (1234.56789).toPrecision(6),
+  (1234.56789).toPrecision(8)
+);
+
+//toString 해당수의 진수로 표현
+const practice = 11;
+console.log(practice.toString(2));
+console.log(
+  (11).toString(),
+  (11).toString(2),
+  (11).toString(8),
+  (11).toString(16)
+);
