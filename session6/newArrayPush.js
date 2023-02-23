@@ -11,3 +11,6 @@ console.log(test3);
 
 test3.push(1);
 console.log(test3); // 기존 만들어진 length 뒤에 1이 psuh됨
+
+test3[0] = 1;
+console.log(test3);
