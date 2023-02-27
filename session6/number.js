@@ -126,7 +126,7 @@ console.log(
 const practice = 11;
 console.log(practice.toString(2));
 console.log(
-  typeof (11).toString(),
+  (11).toString(),
   (11).toString(2),
   (11).toString(8),
   (11).toString(16)

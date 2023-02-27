@@ -29,3 +29,4 @@ const result=Array.from(array, x=>x+1);
 console.log(result);
 result[0] = 18;
 console.log(array,result);
+

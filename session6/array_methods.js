@@ -104,3 +104,5 @@ function classIntro (classNo, teacher, ...children) {
   return `${classNo}반의 선생님은 ${teacher}, `
     + `학생들은 ${children.join(', ')}입니다.`
 }
+
+
