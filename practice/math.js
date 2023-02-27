@@ -85,3 +85,22 @@ for(let i = 0; i < 10 ; i++){
 }
 
 //sin cos tan asin acos atan -> 활용도 모르겠음
+
+console.log(Number([]));
+console.log(isFinite([])); //빈배열 0으로
+console.log(isFinite([123,456,789])); //빈배열 아니면 NaN
+console.log(isNaN([123,456,789]));
+//abs도 [] 0으로 변환 가능
+
+console.log(parseInt([])); //무조건 숫자만 있으면 됨, 빈배열 안됨 >>특이한 아이들 
+
+console.log('안녕'.substring()); //그대로 반환 0으로 간주
+console.log('안녕'.slice()); // 그대로 반환 0으로 간주
+console.log(new Number([])); // 0으로 반환됨
+console.log(new Number());
+console.log((123.456).toFixed()); //0받은 것 처럼
+console.log((132.456).toPrecision()); //그대로
+// console.log((11).toString(39)); //에러 ParseInt는 NaN
+// console.log((11).toString('A')); //에러 ParseInt는 값 그대로 반환함
+//pow 하나만 => NaN,  
+console.log(Math.sqrt());
