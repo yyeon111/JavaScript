@@ -99,8 +99,12 @@ console.log('안녕'.slice()); // 그대로 반환 0으로 간주
 console.log(new Number([])); // 0으로 반환됨
 console.log(new Number());
 console.log((123.456).toFixed()); //0받은 것 처럼
-console.log((132.456).toPrecision()); //그대로
+console.log((132.456).toPrecision()); //그대로 반환 특이
 // console.log((11).toString(39)); //에러 ParseInt는 NaN
 // console.log((11).toString('A')); //에러 ParseInt는 값 그대로 반환함
 //pow 하나만 => NaN,  
-console.log(Math.sqrt());
+console.log(Math.sqrt()); //NaN 연산 들어가야 할 곳에 아무 인자도 전해주지 않거나 음수가 들어오면 NaN
+console.log(Math.abs());
+console.log(Number());
+console.log(isNaN());
+console.log(isFinite());
