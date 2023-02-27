@@ -40,6 +40,7 @@ console.log(
 );
 
 //0이 올 경우는 소수점 밑 버림. => 실수는 우리가 보이는 정수와 같은 모양도 된다. 
+//실수가 아닐 경우에는 정수처럼 보이게
 console.log(
   parseFloat('123.0'),
   parseFloat('123'),
@@ -105,3 +106,11 @@ console.log(encodedKeyword);
 
 const previousURI = '%EC%96%84%EC%BD%94';
 console.log(decodeURIComponent(previousURI));
+
+console.log(
+  parseInt('123.0'),
+  parseInt('123'),
+  parseInt(' 123ABC '),
+  parseInt([123, 456, 789]),
+  parseInt({0:1, 1:2}) //객체는 NaN
+);
