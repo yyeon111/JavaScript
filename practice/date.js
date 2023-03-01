@@ -104,8 +104,8 @@
 
 const now = new Date();
 const timezoneOffset = now.getTimezoneOffset() * 60000;
-
+//차이 * 60분 * 밀리초 
 const isoStr = new Date(now.getTime() - timezoneOffset).toISOString();
-
+//getTime은 밀리초로 알려주기 때문에 timeoffset을 초단위로 바꿔준다. 60단위로 알려줌*1000 
 console.log(isoStr);
 console.log(now.toString());
