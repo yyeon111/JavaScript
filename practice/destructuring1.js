@@ -37,7 +37,7 @@ console.log(
 logTop3(
   [...players]
   .sort((a,b)=> b.score - a.scroe)
-  .map(({name}) => name)
+  .map(({name}) => name) //({})
 );
 console.log(players);
 // console.log([...players]);
