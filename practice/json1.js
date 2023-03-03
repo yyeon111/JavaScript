@@ -205,5 +205,17 @@ const obj5 = {
 
 const obj6 = structuredClone(obj5);
 
-console.log(typeof obj5);
-console.log(typeof obj6);
+console.log(typeof obj5); //object =>Json화 되는 것을 애기 하는게 아님, JS로서의 깊은 복사 이야기
+console.log(typeof obj6); //object 
+
+const obj = {
+  x: 1,
+  y: 2,
+  toJSON: function () {
+    return '훗, 나를 직렬화해보겠다는 건가';
+  }
+}
+
+console.log(
+  obj.toJSON()
+);
