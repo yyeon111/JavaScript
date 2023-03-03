@@ -129,13 +129,13 @@
 const person = {};
 
 // 한 프로퍼티씩 각각 설정
-Object.defineProperty(person, fullName, {
+Object.defineProperty(person, 'fullName', {
   value: '홍길동',
   writable: true
   // 💡 누락한 어트리뷰트는 기본값으로 자동생성
 });
 
-Object.defineProperty(person, name, {
+Object.defineProperty(person, 'name', {
   get () {
     return this.fullName
     .split('')
