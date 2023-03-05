@@ -93,13 +93,13 @@
 // console.log(a); //변경 방법이 없음
 
 // 숫자 요소들의 평균을 구하는 메서드 추가
-Array.prototype[Symbol.for('average')] = function () {
-  let sum = 0, count = 0;
-  for (const i of this) {
-    if (typeof i !== 'number') continue;
-    count++;
-    sum += i;
-  }
-  return sum/count
-}
-[1, 2, 3, 4, 5, 6][Symbol.for('average')]();
+// Array.prototype[Symbol.for('average')] = function () {
+//   let sum = 0, count = 0;
+//   for (const i of this) {
+//     if (typeof i !== 'number') continue;
+//     count++;
+//     sum += i;
+//   }
+//   return sum/count
+// }
+// [1, 2, 3, 4, 5, 6][Symbol.for('average')]();

@@ -48,6 +48,6 @@ x = x << 2; //오른쪽으로 비트를 늘림
 console.log(x.toString(2), x);
 
 // 반복 실행해볼 것, 오른쪽 숫자를 늘려 볼 것
-x = x >> 5;
+x = x >> 1;
 
-console.log(x.toString(2), x);
+console.log(x.toString(2), x); //왼쪽으로 비트가 줄어듬
