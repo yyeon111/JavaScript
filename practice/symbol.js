@@ -1,7 +1,7 @@
-// //Symbol생성 방법
-// const mySymbol = Symbol();
+// Symbol생성 방법
+const mySymbol = Symbol();
 
-// console.log(typeof mySymbol, mySymbol);
+console.log(typeof mySymbol, mySymbol);
 
 // const symbol1 = Symbol('hello');
 // const symbol2 = Symbol('hello');
