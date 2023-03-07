@@ -14,7 +14,7 @@ console.log(set1[2]); //인덱스로 접근 불가능
 const testString = 'hello';
 console.log(testString[0]);
 
-const set2 = new Set([1, 1, 1, 'A', true]); //Set에 넣을 요소들을 배열로 넣어준다.
+const set2 = new Set([1, 1, 1, 'A', true]); //Set에 넣을 요소들을 배열로 넣어준다. => 배열로 초기화
 console.log(set2); //{1, 'A', true}
 // const set3 = new Set(1, 2, 3);
 //Set instance method add
@@ -48,9 +48,9 @@ const arr = ['A', 'B', 'C', 'D', 'E'];
 const set = new Set(arr); //펼쳐져서 들어옴
 
 //배열로 바꾸거나 할 필요 없이 Set 자체가 for of문 가능하다.
-for(itm of set){
-  console.log(itm);
-}
+for([key,value] of set){
+  console.log(key, value);
+} //실제로 key,value가 있는게 아니기 때문에 디스트럭쳐링 못씀
 
 //sperad
 const newArr = [...set];
