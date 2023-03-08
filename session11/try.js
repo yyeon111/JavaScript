@@ -67,3 +67,21 @@ function a (num) {
 }
 
 a('가');
+
+// 특정 월의 당번으로 지원하는 함수
+function applyForMonth (date) {
+  try {
+    if (typeof date !== 'number') {
+      throw new TypeError('숫자로 입력해주세요.');
+    }
+    if (date < 1 || date > 12) {
+      throw new RangeError('유효한 월을 입력해주세요.');
+    }
+
+    console.log(`${date}월 당번으로 등록되셨습니다.`);
+
+  } catch (e) {
+    console.error('🛑 에러 발생!', e);
+    console.log('다시 등록해주세요.');
+  }
+}

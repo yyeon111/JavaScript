@@ -6,7 +6,7 @@ class MilitaryError extends Error {
     //단독으로 this를 가질 수 없다.
     super (...params) //Error에 전달 하는 것 message property
     //Error에서 super시 가져와서 쓰는 것이 아니라, 전달하고 가져오는 것. 
-    // this.name = 'MilitaryError'; 
+    this.name = 'MilitaryError'; 
     //super을 했기 때문에 가능
     //부모의 메세지도 나의 메세지로서 사용 가능
     switch (position) {
