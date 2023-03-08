@@ -58,3 +58,12 @@ function sendStringAsArray (str) {
     ? '[성공]' : '[실패]', '\n\n'
   );
 });
+
+
+function a (num) {
+  if(typeof num !== 'number'){
+      throw new RangeError('숫자를');
+  }
+}
+
+a('가');
