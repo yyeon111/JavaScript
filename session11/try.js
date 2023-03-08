@@ -58,5 +58,3 @@ function sendStringAsArray (str) {
     ? '[성공]' : '[실패]', '\n\n'
   );
 });
-
-
