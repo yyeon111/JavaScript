@@ -1,3 +1,5 @@
+//이터러블 만들기
+
 const diceTenTimes = {
   [Symbol.iterator] () {
     let count = 0;
@@ -50,10 +52,16 @@ function fiboIterator(){
     }
   }
 }
-const fibonacci = {
+const fibonacci = { //알아서 추적
   [Symbol.iterator]: fiboIterator
 }
 
 for(const num of fibonacci){
   console.log(num);
+}
+
+function workersIter(people){
+  let idx = 0;
+
+  
 }
