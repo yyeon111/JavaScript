@@ -24,11 +24,11 @@
 
 function func1 (e) { // 사원
   try {
-    if (e) {throw e}
+    if (e) {throw e} //함수 일때 해당 함수 안에서 catch하기 위해 throw 작성
     console.log('저 가 봐도 되죠?');
     console.log('- - - - - - - - - -');
 
-  } catch (e) {
+  } catch (e) { //오류 발생 시 캐치
     if (e instanceof SyntaxError) {
       console.error('저 이건 알아요!', e); //에러를 호출 해야 error 발생
       console.log('- - - - - - - - - -');
@@ -36,7 +36,7 @@ function func1 (e) { // 사원
     }
     console.log('대리님, 이거 뭐에요?');
     throw e; // 💡 처리하지 못하는 에러는 윗선으로 던짐
-    console.log('실행이되나요');
+    console.log('실행이되나요'); //해당 함수에서 catch 잡지 못했기 때문에 호출 된 곳의 catch로 타고간다.
   }
 }
 function func2 (e) { // 대리
@@ -79,3 +79,14 @@ function func4 (e) { // 사장
 // func4(new TypeError());
 func4(new ReferenceError());
 func4(new RangeError);
+
+// throw new SyntaxError('what');
+// // throw new Error('이유를 묻지마라');
+// // throw new SyntaxError('what'); 던지면 catch로 받아야 한다.
+
+const test  = new SyntaxError(
+  '신텍스',
+  {cause: '뭔가 잘못 했겠지'}
+  );
+
+  console.log(test);
