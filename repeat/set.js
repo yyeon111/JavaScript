@@ -63,4 +63,19 @@ console.log(new Set([1, 1, 3, 4, 5, 5, 6, 7, 7, 8, 9])); //배열로서 들어�
 const test2 = new Set();
 console.log(test2.add([1, 2, 3]));
 const test3 = new Set([1, 2, 3]);
-console.log(test3);
+console.log(test3); 
+//처음에 배열로 생성하면, 배열로서가 아닌 여러개의 값이 들어간다고 인식
+//객체로 생성하면, 생성이 안된다. 초기 생성은 이터러블로만 생성이 가능하다.
+//set객체가 생성된 이후에는 배열, 객체가 들어 갈 수 있다.
+
+const obj = new Set();
+obj.add(1);
+
+const obj1 = obj;
+
+obj1.add(2);
+console.log(obj,obj1); // 원시형이 들어가도 복사 set 자체가 참조형 데이터 이기 때문.
+
+obj.add({x: 1, y: 2});
+obj.add({x: 1, y: 2});
+console.log(obj);
