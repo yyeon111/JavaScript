@@ -10,7 +10,7 @@ const  obj = {
 }
 
 console.log(obj['hello']);
-console.log(obj['hello'])
+console.log(obj['hello']);
 
 // console.log(obj);
 

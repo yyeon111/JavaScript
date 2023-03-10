@@ -10,7 +10,7 @@ function YalcoChicken (name, no) {
   }
 }
 
-const chain1 = new YalcoChicken('판교', 3);
-const chain2 = YalcoChicken('강남', 17);
+const chain1 = new YalcoChicken('판교', 3); //new가 있으면 프로퍼티가 리턴이됨
+const chain2 = YalcoChicken('강남', 17); //일반 함수처럼 return도 없어서 안됨
 
 console.log(chain1, chain2);
