@@ -104,3 +104,11 @@ map4.forEach(i => console.log(i));
 // for([key,value] of testSet){
 //   console.log(key,value);
 // }
+
+const test = {[{x:1, y:2}]: 2};
+console.log(test);
+const tempKey = {x:1, y:2};
+const test1 = {tempKey: 2};
+console.log(test1);
+console.log(test1.tempKey);
+console.log(test1[{x:1, y:2}]);
