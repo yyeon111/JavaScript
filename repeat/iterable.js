@@ -170,6 +170,6 @@ function switchWorker(iter) {
   );
 }
 
-let workersIter2 = workersIter(team1);
+let workersIter2 = workersIter(team1); 
 switchWorker(workersIter2); // ⭐ 반복 실행해 볼 것
-switchWorker(workersIter2);
+switchWorker(workersIter2); //인자로 전달 받을 때, 주소 계속 참조하기 때문에 만들어졌던 객체를 계속 가리킴
