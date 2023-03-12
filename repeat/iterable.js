@@ -172,3 +172,4 @@ function switchWorker(iter) {
 
 let workersIter2 = workersIter(team1);
 switchWorker(workersIter2); // ⭐ 반복 실행해 볼 것
+switchWorker(workersIter2);
