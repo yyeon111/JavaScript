@@ -108,6 +108,9 @@ spreadTest.map(i => console.log(i.name));
 //인자를 받기 위해 함수로 작성 법
 
 //이터레이터를 자기 자신을 반환함으로써 next호출 => 블록문 안에 있는 것이 아니기 때문에 next가 반복 실행되지 않는다.
+
+//이터러블 인자를 받아 새로운 이터러블 생성
+//자기 자신을 반환 할 수도 있다.
 function workersIter (people) {
   let idx = 0;
 
@@ -131,12 +134,13 @@ function workersIter (people) {
 const team1 = [
   '철수', '영희', '돌준', '미나', '준희'
 ];
-let workersIter1 = workersIter(team1); //객체가 담김 -> symbol이 있는
-
+let workersIter1 = workersIter(team1); //인자를 전달해서 iterator를 생성
+//함수를 통해 만든 객체는 한번만 생성된다.
+//spread이기 때문에 안에 함수들 실행 일일이 안해줘도 됨.
 console.log(
   [...workersIter1]
 );
-
+//객체 한번만 만들어지고 없어짐
 console.log(
   [...workersIter1]
 );
