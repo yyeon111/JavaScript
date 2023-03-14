@@ -91,14 +91,14 @@ console.count('count'); //label로 찍힘
 
 // console.table(me);
 
-// function obj () {
-//   return {name, age, school}
-// }
-// const name = 'What';
-// const age = '18';
-// const school = 'korea';
+function obj (name, age, school) {
+  return {name, age, school}
+}
+const name = 'What';
+const age = '18';
+const school = 'korea';
 
-// console.log(obj('how', 20, 'Y'));
+console.log(obj('how', 20, 'Y'));
 
 // const color = {red: '빨강', yellow: '노랑', blue: '파랑'};
 // const clothes = {red: '뻘간', yellow: '노랭', blue: '푸른'};
@@ -115,7 +115,7 @@ console.count('count'); //label로 찍힘
 
 function foo() {
   function bar() {
-    console.trace(); //해당 함수 시작으로 추적 at
+    console.trace(); //해당 함수 시작으로 추적
   }
   bar();
 }
