@@ -5,7 +5,7 @@
 for (
   let x = true, y = 0, z = 0;
   y * z < 10; 
-  x = !x, x ? y++ : z++ //finial expression
+  x = !x, x ? y++ : z++ //finial expression 실행, 실제 실행안 다음 루프에서
 ) {
   console.log(y, z);
 }
