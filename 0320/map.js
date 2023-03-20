@@ -54,3 +54,25 @@ for(let i of map3) {
   console.log(i[0] = ['z',10]);
 }
 console.log(map3);
+
+const map4 = new Map();
+map4.set([['x', 1], ['y',2]]);
+console.log(map4);
+
+const set1 = new Set([1, 2, 3]);
+console.log(set1);
+const set2 = new Set();
+set2.add([1, 2, 3]);
+console.log(set2);
+
+
+const map1 = new Map([['x', 1], ['y', 2]]);
+console.log(map1.x);
+delete map1.x;
+
+console.log(map1);
+
+map1.z = 3;
+console.log(map1);
+
+console.log(map1.entries());

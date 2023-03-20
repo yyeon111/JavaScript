@@ -84,3 +84,25 @@ const student2 = new Students('Nora', 18);
 console.log(student2.age);
 console.log(student2);
 console.log(student2.대);
+
+class Coffe {
+	#name = '';
+    #price = 0;
+    constructor (name, price){
+    	this.#name = name;
+        this.#price = price;
+    }
+    get name () {
+    	return `${this.#name}은 ${this.#price} 입니다.`;
+    }
+    set price (price) {
+    	this.#price = price;
+    }
+}
+
+const latte = new Coffe('카페라떼', 5500);
+console.log(latte);
+console.log(latte.name);
+latte.price = 6000;
+console.log(latte);
+console.log(latte.price);
