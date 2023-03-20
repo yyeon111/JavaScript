@@ -8,3 +8,11 @@
 
 // const a = new A ('Nora', 18);
 // console.log(a);
+
+// function A (name, age) {
+//   this.name = name;
+//   this._age = age;
+//   this. get age = function () {
+
+//   }
+// }
