@@ -104,3 +104,7 @@ console.log(Students);
 //static으로 내부에서 불가 따로 지정
 
 //class는 내부에서 static으로 가능, 밖에서도 추가로 가능.
+
+function a (){}
+console.log(typeof a);
+console.log(a instanceof Object);
