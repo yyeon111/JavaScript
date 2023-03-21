@@ -12,11 +12,11 @@ console.log(typeof obj);
 console.log('==============instanceof Object================')
 console.log(str instanceof Object);
 console.log(num instanceof Object);
-console.log(arr instanceof Object);
-console.log(obj instanceof Object);
+console.log(arr instanceof Object); //true
+console.log(obj instanceof Object); //true
 
 console.log('==============instacneof typeof================')
 console.log(str instanceof String);
 console.log(num instanceof Number);
-console.log(arr instanceof Array);
-console.log(obj instanceof Object);
+console.log(arr instanceof Array); //true
+console.log(obj instanceof Object); //true
