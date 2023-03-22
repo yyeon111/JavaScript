@@ -67,11 +67,11 @@
 
 // console.log('4.', arr2);
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-console.log(arr);
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arr);
 
-// 💡 메서드 자체도 뒤집힌 배열을 반환
-arrRev = arr.reverse();
+// // 💡 메서드 자체도 뒤집힌 배열을 반환
+// arrRev = arr.reverse();
 
 // 원본 배열 뒤집힘
 // console.log(arr, arrRev);
@@ -116,3 +116,28 @@ console.log('N:', arr0);
 console.log('1:', arr1);
 console.log('2:', arr2);
 console.log('3:', arr3);
+
+// const test = new Array([1, 2, 3]);
+// console.log(test); // [[1, 2, 3]]
+// const test1 = new Array(3); 
+// console.log(test1); // [undefined, undefined, undefined]
+// const test2 = new Array(1, abc, 3); // error
+
+// /const test = Array.of(3); // [3]
+// const test1 = Array.of('hello'); // ['hello']
+// const test2 = Array.of(1, true, 'abc'); //[1, true, 'abc']
+// const test3 = Array.of([1, 2, 3]); // [[1, 2, 3]]
+// const test4 = Array.of({0: 1, 1: 2, 2: 3}); // [{0: 1, 1: 2, 2: 3}]
+// console.log(test, test1, test2, test3,test4);
+
+// const test = Array.from({
+//   0: 1,
+//   1: 2,
+//   2: 3,
+//   length: 3
+// })
+// console.log(test);
+
+const arr = [1, 2, 3]
+const test = Array.from(arr, x => x + 1);
+console.log(arr, test);
