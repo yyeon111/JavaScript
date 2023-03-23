@@ -48,8 +48,8 @@ console.log(originArray, sliced); // [1, 2, 3, 4, 5], [3, 4]
 
 const multiple = [1, [2, 3], [4, [5, 6]], [7, [8, [9]]]];
 console.log(
-  multiple.flat(),
-  multiple.flat(1),
-  multiple.flat(2),
-  multiple.flat(3),
+  multiple.flat(), // 1과 같음
+  multiple.flat(1), // [ 1, 2, 3, 4, 5 ] [ 3, 4 ]
+  multiple.flat(2), // [1, 2, 3, 4, 5, 6, 7, 8, [ 9 ]
+  multiple.flat(3), // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 );
