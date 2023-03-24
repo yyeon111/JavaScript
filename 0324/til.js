@@ -86,7 +86,7 @@ console.log(arr);
 const multiple = [1, [2, [3, [4]]]];
 
 console.log(multiple.flatMap(i => i));
-console.log(arr.flatMap(i => i*2))
+console.log(arr.flatMap(i => i * 2))
 
 const word = '하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열';
 

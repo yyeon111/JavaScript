@@ -21,6 +21,6 @@ const arr = [
 ];
 
 const fruits = arr.filter(({카테고리}) => 카테고리 === '과일');
-console.log(fruits);
+console.log(fruits); 
 const name = fruits.map(({name}) => name);
-console.log(name);
+console.log(name); // ['사과, '딸기']
