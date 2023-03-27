@@ -163,4 +163,4 @@ console.log(sym[b]);
 console.log(sym.b);
 console.log(sym.f);
 console.log(sym['g']);
-console.log(sym.Symbol('a'));
+// console.log(sym.Symbol('a'));
