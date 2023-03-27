@@ -1,15 +1,15 @@
 function getDeepFrozen(obj) {
-  console.log(obj);
+  console.log(obj); //c,d
 
   const result = {};
   const propNames = Object.getOwnPropertyNames(obj);
 
   for (const name of propNames) {
-    const value = obj[name];
+    const value = obj[name]; //2, 3
 
     result[name] = 
       (value && typeof value === 'object') ?
-      getDeepFrozen(value) : value;
+      getDeepFrozen(value) : value; // {a: 1, b 
   }
   return Object.freeze(result);
 }

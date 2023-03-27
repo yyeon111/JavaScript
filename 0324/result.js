@@ -11,14 +11,16 @@ function getDeepFrozen(obj) {
       (value && typeof value === 'object') ?
       getDeepFrozen(value) : value;
        
-      for (const i in result){
-        console.log(i, result[i]);
-      }
+      // for (const i in result){
+      //   console.log(i, result[i]);
+      // }
       
   }
-  return Object.freeze(result);
+  for (const i in result){
+    console.log(i, result[i]);
+  // return Object.freeze(result);
 }
-
+}
 let myObj = {
   a: 1,
   b: {
@@ -33,16 +35,3 @@ let myObj = {
 }
 // 💡 실행 뒤 바로 위의 출력 코드를 다시 실행해 볼 것
 myObj = getDeepFrozen(myObj);
-
-function outer () {
-  const name = '바깥쪽'
-  console.log(name, '함수');
-
-  function inner () {
-    const name = '안쪽'
-    console.log(name, '함수');
-  }
-  inner();
-}
-
-outer();
