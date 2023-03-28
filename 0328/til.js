@@ -7,5 +7,5 @@ const arr = new Map(
 );
 
 const [x, ...rest] = arr;
-console.log(x);
-console.log(rest);
+console.log(x); // ['a', 1]
+console.log(rest); // [['b', 2],['c', 3]]
