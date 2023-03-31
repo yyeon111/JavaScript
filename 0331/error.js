@@ -20,8 +20,7 @@ try {
 console.log('에러 발생 후');
 
 const test = new Error('이게뭘까');
-console.log(test.name);
-console.log(test.message);
+console.dir(test);
 
 // 두 번째 인자로 이유를 명시할 수도 있음
 const error = new Error(
