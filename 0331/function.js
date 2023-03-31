@@ -11,9 +11,9 @@ function sendStringAsArray(str) {
     console.error('❗Check this Error', e);
     return false;
   } finally {
-     discconect();
+    discconect();
   }
- 
+
 }
 
 // sendStringAsArray('ABC') ? '[성공]' : '[실패]';
