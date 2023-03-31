@@ -37,3 +37,4 @@ console.log(genFunc); //generator [Symbol.iterator], next()
   for(i = 1; i < 10; i++) {
     console.log(genObj.next());
   }
+  
