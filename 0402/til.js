@@ -20,19 +20,19 @@
 
 // const test = typeof 1 === 'number' ? {prop1: } : undefined;
 // console.log(test);
-const notSure = () => 1 ? {
-  prop1: 1 ? {
-    prop2: 0 ? {
-      prop3: 0 ? '성공' : undefined
-    } : undefined
-  } : undefined
-} : undefined;
+// const notSure = () => 1 ? {
+//   prop1: 1 ? {
+//     prop2: 0 ? {
+//       prop3: 0 ? '성공' : undefined
+//     } : undefined
+//   } : undefined
+// } : undefined;
 
-// const test = {prop1: {prop2: {prop3: '성공'}}}
+// // const test = {prop1: {prop2: {prop3: '성공'}}}
 
-const result = notSure();
-console.log(result);
-console.log(JSON.stringify(result));
+// const result = notSure();
+// console.log(result);
+// console.log(JSON.stringify(result));
 // console.log(result.prop1.prop2.prop3); //prop3이 없을 시 에러
 
 // const result = notSure();
@@ -53,3 +53,43 @@ console.log(JSON.stringify(result));
 
 // const answer = {property: test(1)};
 // console.log(answer);
+
+// 최소 undefined
+// 최대 {prop1:{prop2:{prop3:'성공!'}}}
+// 까지 반환하는 함수
+const rand = () => Math.random() < 0.75;
+
+const notSure = () => 1 ? {
+  prop1: 0 ? {
+    prop2: 1 ? {
+      prop3: 0 ? '성공!' : undefined
+    } : undefined
+  } : undefined
+} : undefined;
+
+// 방법 1
+const result = notSure();
+
+if (result) {
+  if (result.prop1) {
+    if (result.prop1.prop2) {
+      console.log(result.prop1.prop2.prop3);
+    }
+  }
+}
+console.log(notSure());
+
+let undef = undefined;
+
+// console.log(
+//   undef?.x,
+//   undef?.['x'],
+//   undef?.[1],
+//   {}.func?.()
+// );
+
+
+
+
+console.log(JSON.stringify(undef?.x));
+console.log(JSON.stringify({x: {y: undefined}}))
