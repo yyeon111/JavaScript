@@ -59,7 +59,7 @@ console.log(employee.name(), employee.age());
 
 let _name= '';
 const obj = {
-  _name: name,
+  // _name: name,
   name: () => this._name,
   age: () => age
 };
